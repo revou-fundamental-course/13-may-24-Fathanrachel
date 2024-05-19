@@ -1,0 +1,107 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: url(/assets/wave.svg);
+    background-repeat: no-repeat;
+}
+
+header{
+    text-align: center;
+}
+
+header ul{
+    list-style: none;
+    padding: 5px;
+
+}
+
+header ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.link1{
+    padding: 5px 17px 5px 17px;
+    border: 2px solid ;
+    height: 100px;
+    border-radius: 3px;
+}
+
+.link2{
+    padding: 5px;
+    border: 2px solid ;
+    border-radius: 3px;
+}
+
+.info{
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.judul{
+    text-align: center;
+    color: #a2d9ff;
+    font-size: 50px;
+    background-color: #000099;
+    margin-top: -0.5px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+section>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+}
+
+section>h1{
+    text-align: center;
+}
+
+#rumus{
+    text-align: center;
+    font-size:large;
+    font-weight: bolder;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+section>p{
+    text-indent: 20px;
+}
+
+#submit{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    border: none;
+    background-color:cornflowerblue;
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+
+#reset{
+    text-align: center;
+    float: right;
+    border: none;
+    background-color: coral;
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+
+form>#fname, form>#lname{
+    padding: 8px;
+    width: calc(100% - 19px);
+    border: 2px solid;
+}
+
+.hasil_luas>p{
+    text-indent: 20px;
+}
