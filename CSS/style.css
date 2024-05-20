@@ -1,5 +1,5 @@
 *{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 body{
@@ -33,6 +33,10 @@ header ul li a{
     padding: 5px;
     border: 2px solid ;
     border-radius: 3px;
+}
+
+.link1:hover, .link2:hover{
+    background-color: #00ccff;
 }
 
 .info{
@@ -82,18 +86,32 @@ section>p{
     margin: auto;
     display: flex;
     border: none;
-    background-color:cornflowerblue;
+    background-color:#003399;
+    color: #0099ff;
     padding: 12px 25px;
     border-radius: 10px;
+    font-size: 15px;
+}
+
+#submit:hover{
+    background-color: #000099;
+    color:#a2d9ff;
 }
 
 #reset{
     text-align: center;
     float: right;
     border: none;
-    background-color: coral;
+    background-color: #cc0000;
+    color: #ffcc00;
     padding: 12px 25px;
     border-radius: 10px;
+    font-size: 15px;
+}
+
+#reset:hover{
+    background-color: #660000;
+    color: #ff0000;
 }
 
 form>#fname, form>#lname{
