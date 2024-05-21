@@ -4,56 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katik</title>
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 
 <body>
     <header>
-            <h1>✨ Welcome To Katik ✨</h1>
-            <p>Hai Sobat, Welcome To Katik</p>
-            <p>Katik adalah Web Sederhana Yang Berguna Untuk Menghitung Luas dan Keliling Segitiga</p><br>
-            <ul>
-                <li><a href="index.html" class="link1">Luas segitiga</a></li><br>
-                <li><a href="kll.html" class="link2">Keliling Segitiga</a></li><br>
-            </ul>
+        <h1>✨ Welcome To Katik ✨</h1>
+        <p>Hai Sobat, Welcome To Katik</p>
+        <p>Katik adalah Web Sederhana Yang Berguna Untuk Menghitung Luas dan Keliling Segitiga</p><br>
+        <ul>
+            <li><a href="index.html" class="link1">Luas segitiga</a></li><br>
+            <li><a href="kll.html" class="link2">Keliling Segitiga</a></li><br>
+        </ul>
     </header>
-    
+
     <!-- Section Info -->
-
-    <section class="info">
+    <section>
         <h1 class="judul">Luas Segitiga</h1>
-        <img src="assets/00d0de67eacdbfb84d662e75de9eea7e.jpeg" alt="Segitiga">
-        <br>    
-        <p>Rumus Luas segita Yaitu:</p>
-        <p id="rumus">L = 1/2 x a x t</p><br>
-        <p>Di Mana:</p>
-        <p>L = Luas</p>
-        <p>a = Panjang Alas</p>
-        <p>t = Tinggi</p>
-        <hr><br>
-        <h1>Hitung Luas Segitiga</h1>
-
-        <form >
-            <input type="text" id="fname" name="Alas" placeholder="Nilai Alas"><br><br>
-            <input type="text" id="lname" name="Tinggi" placeholder="Nilai Tinggi"><br><br><br>
-            <input type="submit" id="submit" value="Submit"><br><br>
-            <input type="reset" id="reset" value="Reset"><br><br>
-        </form>
-
-        <div class="hasil_luas">
-            <p>HASIL: </p>
-            <p>L = 1/2 x a x t</p>
-            <p></p>
+        <div class="hero">
+            <div class="fathan">
+                <p>Rumus Luas segita Yaitu:</p>
+                <ul>
+                    <p id="rumus">L = 1/2 x a x t</p>
+                    <p>Keterangan</p>
+                    <li>L = Luas</li>
+                    <li>a = Panjang Alas</li>
+                    <li>t = Tinggi</li>
+                </ul>
+            </div>
+            <img src="assets/00d0de67eacdbfb84d662e75de9eea7e.jpeg" alt="Segitiga">
         </div>
 
-
+        <form class="kalkulator">
+            <input type="number" id="Alas" name="perhitungan" placeholder="Masukkan Alas" />
+            <br />
+            <input type="number" id="Tinggi" name="perhitungan" placeholder="Masukkan Tinggi" />
+            <br />
+            <p id="Hasil_Perhitungan">Hasil: </p>
+            <button type="button" onclick="myFunction()">Hitung</button>
+            <button type="button" onclick="resetForm()">Reset</button>
+        </form>
     </section>
 
     <!-- Footer -->
-
     <footer>
-
+        <p>&copy; 2024 - Kalkulator Segitiga</p>
     </footer>
 
+    <script src="/JS/script.js"></script>
 </body>
 </html>

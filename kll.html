@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katik</title>
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 
 <body>
@@ -17,42 +17,42 @@
                 <li><a href="kll.html" class="link2">Keliling Segitiga</a></li><br>
             </ul>
     </header>
-    
+
     <!-- Section Info -->
-
-    <section class="info">
+    <section>
         <h1 class="judul">Keliling Segitiga</h1>
+        <div class="hero">
+        <div class="fathan">
+                <p>Rumus Keliling segita Yaitu:</p>
+                <ul>
+                    <p id="rumus1">KLL = S1 + S2 + S3</p>
+                    <p>Keterangan</p>
+                    <li>KLL = Keliling</li>
+                    <li>S1, S2, S3 = Panjang Sisi</li>
+                </ul>
+        </div> 
         <img src="assets/00d0de67eacdbfb84d662e75de9eea7e.jpeg" alt="Segitiga">
-        <br>    
-        <p>Rumus Keliling segita Yaitu:</p>
-        <p id="rumus">K = S x S x S</p><br>
-        <p>Di Mana:</p>
-        <p>K = Keliling</p>
-        <p>S = Sisi</p>
-        <hr><br>
-        <h1>Hitung Keliling Segitiga</h1>
-
-        <form >
-            <input type="text" id="fname" name="Alas" placeholder="Nilai Alas"><br><br>
-            <input type="text" id="lname" name="Tinggi" placeholder="Nilai Tinggi"><br><br><br>
-            <input type="submit" id="submit" value="Submit"><br><br>
-            <input type="reset" id="reset" value="Reset"><br><br>
-        </form>
-
-        <div class="hasil_luas">
-            <p>HASIL: </p>
-            <p>K = S x S x S</p>
-            <p></p>
         </div>
-
+        
+    <form class="kalkulator">
+        <input type="number" id="sisi1" name="perhitungan" placeholder="Masukkan sisi 1" />
+        <br />
+        <input type="number" id="sisi2" name="perhitungan" placeholder="Masukkan sisi 2" />
+        <br />
+        <input type="number" id="sisi3" name="perhitungan" placeholder="Masukkan sisi 3" />
+        <br />
+        <p id="Hasil_Perhitungan2">Hasil: </p>
+        <button type="button" onclick="myFunction2()">Hitung</button>
+        <button type="button" onclick="resetForm2()">Reset</button>
+    </form>
 
     </section>
 
     <!-- Footer -->
-
     <footer>
-
+        <p>&copy; 2024 - Kalkulator Segitiga</p>
     </footer>
 
 </body>
+<script src="/JS/script.js"></script>
 </html>

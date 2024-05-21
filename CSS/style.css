@@ -1,10 +1,9 @@
-*{
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
 body{
     background-image: url(/assets/wave.svg);
     background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -39,10 +38,21 @@ header ul li a{
     background-color: #00ccff;
 }
 
-.info{
-    border: 2px solid;
-    border-radius: 10px;
+section>h1{
+    text-align: center;
 }
+
+.hero {
+    padding: 2%;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #000099;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+  }
 
 .judul{
     text-align: center;
@@ -54,72 +64,70 @@ header ul li a{
     border-radius: 10px;
 }
 
-section>img{
+.hero p,
+.hero ul li {
+  font-size: 18px;
+  list-style-type: none;
+}
+
+.hero>img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 350px;
-}
-
-section>h1{
-    text-align: center;
+    height: 300px;
 }
 
 #rumus{
-    text-align: center;
     font-size:large;
     font-weight: bolder;
 }
 
-hr{
-    border: none;
-    height: 2px;
-    background-color: black;
-}
-
-section>p{
-    text-indent: 20px;
-}
-
-#submit{
+.kalkulator {
     text-align: center;
-    margin: auto;
-    display: flex;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #000099;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 300px;
+  }
+  
+  .kalkulator input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #00ccff;
+    color: white;
     border: none;
-    background-color:#003399;
-    color: #0099ff;
-    padding: 12px 25px;
-    border-radius: 10px;
-    font-size: 15px;
-}
-
-#submit:hover{
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
     background-color: #000099;
-    color:#a2d9ff;
-}
+  }
+  
+  #Hasil_Perhitungan,
+  #Hasil_Perhitungan2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
 
-#reset{
+
+
+footer{
+    background-color: #0099ff;
+    color: white;
     text-align: center;
-    float: right;
-    border: none;
-    background-color: #cc0000;
-    color: #ffcc00;
-    padding: 12px 25px;
-    border-radius: 10px;
-    font-size: 15px;
-}
-
-#reset:hover{
-    background-color: #660000;
-    color: #ff0000;
-}
-
-form>#fname, form>#lname{
-    padding: 8px;
-    width: calc(100% - 19px);
-    border: 2px solid;
-}
-
-.hasil_luas>p{
-    text-indent: 20px;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
