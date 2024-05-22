@@ -120,8 +120,6 @@ section>h1{
     margin-top: 20px;
   }
 
-
-
 footer{
     background-color: #0099ff;
     color: white;
@@ -130,4 +128,22 @@ footer{
     width: 100%;
     bottom: 0;
     left: 0;
+}
+
+@media screen and (max-width: 580px) {
+  .hero {
+    padding: 10%;
+  }
+  .hero p {
+    font-size: 10px;
+  }
+  .hero ul li {
+    font-size: 10px;
+  }
+
+  img {
+    padding: 10%;
+    width: 100px;
+    height: 70px;
+  }
 }
